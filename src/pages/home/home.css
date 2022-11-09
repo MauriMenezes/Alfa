@@ -1,0 +1,22 @@
+header {
+  background: linear-gradient(#aaeea7 40%, rgb(255, 255, 255));
+  padding: 15px;
+}
+
+main {
+  background: linear-gradient(white, #dfe2e4, #aaeea7);
+}
+
+.video-p {
+  border-radius: 6px;
+}
+
+.audio {
+  margin-top: 26px;
+
+  text-align: center;
+}
+
+.img-home {
+  border-radius: 6px;
+}
