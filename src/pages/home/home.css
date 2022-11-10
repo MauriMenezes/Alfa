@@ -1,14 +1,15 @@
 header {
-  background: linear-gradient(#aaeea7 40%, rgb(255, 255, 255));
+  background: linear-gradient(#aaeea7 40%, #F8F9FA);
   padding: 15px;
 }
 
 main {
-  background: linear-gradient(white, #dfe2e4, #aaeea7);
+  background: linear-gradient(#F8F9FA, #dfe2e4, #aaeea7);
 }
 
 .video-p {
   border-radius: 6px;
+
 }
 
 .audio {
@@ -19,4 +20,6 @@ main {
 
 .img-home {
   border-radius: 6px;
+  box-shadow: 6px 6px 5px #919791;
+
 }

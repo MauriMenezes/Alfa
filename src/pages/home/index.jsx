@@ -3,13 +3,14 @@ import { Link } from "react-router-dom"
 import Cards from '../../components/Cards';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { BsFillPencilFill, BsBook } from 'react-icons/bs';
-//
-
 import './home.css'
+import Header from '../../components/Header';
+
+
 const Home = () => {
   return (
     <>
-      <header>
+      <header id='header-index'>
         <Container fluid>
           <Row>
             <Col>
@@ -53,6 +54,7 @@ const Home = () => {
             <audio src="assets/audio/objetivo.mpeg" controls></audio>
           </div>
           <Row>
+            <hr></hr>
             <Col>
               <p>
                 A plataforma tem como objetivo oferecer educação para jovens e adultos que moram em áreas rurais e estão atrasados ​​em sua formação.
@@ -65,8 +67,10 @@ const Home = () => {
               </p>
             </Col>
             <Col md={6}>
-              <img className='img-home' src="img/pag-inicial/children-306607_1280.jpg" width="100%" ></img>
+              <img className='img-home mb-3' src="img/pag-inicial/children-306607_1280.jpg" width="100%" ></img>
             </Col>
+            <hr></hr>
+
           </Row>
           <Row>
             <div className='audio'>
@@ -74,8 +78,7 @@ const Home = () => {
               <audio src="assets/audio/objetivo.mpeg" controls></audio>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quos commodi possimus ad, vitae adipisci omnis porro quam ex soluta, ipsam dolore quasi eveniet similique, dolor minus quis exercitationem atque.
-              Expedita ex nostrum, ipsum, cupiditate voluptate modi numquam eum odit minus quidem quod labore sed perspiciatis, ut sunt accusamus pariatur voluptates distinctio aliquam tenetur cumque voluptatum non! Nostrum, possimus soluta.
+              Promover a superação do analfabetismo entre jovens com 15 anos ou mais, adultos e idosos e contribuir para a universalização do ensino fundamental no Brasil focado principalmente nas Áreas rurais. Sua concepção reconhece a educação como direito humano e a oferta pública da alfabetização como porta de entrada para a educação e a escolarização das pessoas ao longo de toda a vida.
             </div>
           </Row>
 
@@ -84,11 +87,7 @@ const Home = () => {
               <h3> Percurso</h3>
               <audio src="assets/audio/objetivo.mpeg" controls></audio>
             </div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, pariatur porro ipsa aut repudiandae commodi ex tenetur molestias optio saepe maiores beatae odit nisi, aliquam est assumenda nam, ipsam temporibus!
-              Nostrum deserunt quos cumque voluptates eius, libero et eos modi animi accusamus architecto atque omnis tenetur rerum earum amet voluptatibus assumenda incidunt laborum sint minima sunt tempora nulla cupiditate? Fugit!
-              Commodi cumque odit, libero sequi eveniet repudiandae impedit corrupti unde sit rem dicta molestiae iure porro iste perferendis voluptatibus vitae obcaecati. Qui voluptatum ratione repellat? Perspiciatis, aliquam quibusdam! Animi, voluptatibus.
-            </div>
+
 
           </Row>
 

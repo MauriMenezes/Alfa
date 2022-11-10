@@ -4,19 +4,20 @@ import { AuthProvider, AuthContext } from './context/auth';
 import Home from './pages/home'
 import Login from './pages/loginPage'
 import Register from './pages/registerPage'
+import Biblioteca from './pages/biblioteca';
 
 
 
 const AppRoutes = () => {
 
   const Private = ({ children }) => {
-    const { authenticated, loading } = useContext(AuthContext)
-    if (loading) {
-      return <div>Carregando...</div>
-    }
-    if (!authenticated) {
-      return <Navigate to="/login" />
-    }
+    // const { authenticated, loading } = useContext(AuthContext)
+    // if (loading) {
+    //   return <div>Carregando...</div>
+    // }
+    // if (!authenticated) {
+    //   return <Navigate to="/login" />
+    // }
     return children
   }
 
@@ -38,7 +39,18 @@ const AppRoutes = () => {
             element={<Register />}>
           </Route>
 
+
         </Routes>
+        <Private>
+          <Routes>
+            <Route
+              exact path='/biblioteca'
+              element={<Biblioteca />}>
+            </Route>
+
+          </Routes>
+
+        </Private>
       </AuthProvider>
     </Router>
 

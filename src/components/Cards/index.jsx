@@ -12,7 +12,7 @@ const Cards = ({ width, img, titulo, texto, info, preco, quarto, btn, audio }) =
   return (
 
     <Col className="box-cards">
-      <Card style={{ width: '22rem' }} className="card">
+      <Card style={{ width: width }} className="card">
         <Card.Img variant="top" src={img} />
         <Card.Body>
           <Card.Title>{titulo}</Card.Title>
@@ -29,7 +29,7 @@ const Cards = ({ width, img, titulo, texto, info, preco, quarto, btn, audio }) =
             {preco}
           </Card.Text>
           <Card.Text>
-            <MdVerifiedUser />{quarto}
+            {quarto}
           </Card.Text>
           {btn}
         </Card.Body>
