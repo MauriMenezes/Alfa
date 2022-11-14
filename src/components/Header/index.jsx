@@ -36,7 +36,7 @@ const Header = () => {
                     <div className='text-center'>
                       <BsPlayCircle />
                     </div>
-                    <Link className="link" to={"/"} >
+                    <Link className="link" to={"/aula1"} >
                       Video Aula
                     </Link>
                   </Nav.Link>
@@ -52,7 +52,7 @@ const Header = () => {
                     <div className='text-center'>
                       <BsBookHalf />
                     </div>
-                    <Link className="link" to={"/"} >
+                    <Link className="link" to={"/biblioteca"} >
                       Biblioteca Fácil
                     </Link>
                   </Nav.Link>

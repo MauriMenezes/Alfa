@@ -14,7 +14,8 @@ const Modals = (props) => {
     <>
 
       <Cards onClick={handleShow}
-        width="14rem"
+        height="180px"
+        width="16rem"
         img={props.img}
         titulo={props.titulo}
         btn={<Button variant="primary" onClick={handleShow}> Abrir</Button>}
