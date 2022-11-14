@@ -5,6 +5,9 @@ import Home from './pages/home'
 import Login from './pages/loginPage'
 import Register from './pages/registerPage'
 import Biblioteca from './pages/biblioteca';
+import VideoAula1 from './pages/videoAula';
+import VideoAula2 from './pages/videoAula/videoaula2';
+import VideoAula3 from './pages/videoAula/videoaula3';
 
 
 
@@ -41,13 +44,25 @@ const AppRoutes = () => {
 
 
         </Routes>
+        {/* private */}
         <Private>
           <Routes>
             <Route
               exact path='/biblioteca'
               element={<Biblioteca />}>
             </Route>
-
+            <Route
+              exact path='/aula1'
+              element={<VideoAula1 />}>
+            </Route>
+            <Route
+              exact path='/aula2'
+              element={<VideoAula2 />}>
+            </Route>
+            <Route
+              exact path='/aula3'
+              element={<VideoAula3 />}>
+            </Route>
           </Routes>
 
         </Private>
