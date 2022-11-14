@@ -8,6 +8,8 @@ import Biblioteca from './pages/biblioteca';
 import VideoAula1 from './pages/videoAula';
 import VideoAula2 from './pages/videoAula/videoaula2';
 import VideoAula3 from './pages/videoAula/videoaula3';
+import Ex1 from './pages/exercicios/ex1';
+import Ex2 from './pages/exercicios/ex2';
 
 
 
@@ -62,6 +64,22 @@ const AppRoutes = () => {
             <Route
               exact path='/aula3'
               element={<VideoAula3 />}>
+            </Route>
+            <Route
+              exact path='/ex1'
+              element={<Ex1 />}>
+            </Route>
+            <Route
+              exact path='/ex2'
+              element={<Ex2 />}>
+            </Route>
+            <Route
+              exact path='/ex1'
+              element={<Ex1 />}>
+            </Route>
+            <Route
+              exact path='/ex1'
+              element={<Ex1 />}>
             </Route>
           </Routes>
 

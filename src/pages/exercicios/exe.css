@@ -1,0 +1,18 @@
+.questao {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.img-exe {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+.opc {
+  text-align: center;
+}

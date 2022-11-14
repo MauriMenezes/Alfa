@@ -44,7 +44,7 @@ const Header = () => {
                     <div className='text-center'>
                       <BsFillPencilFill />
                     </div>
-                    <Link className="link" to={"/"} >
+                    <Link className="link" to={"/ex1"} >
                       Exercícios
                     </Link>
                   </Nav.Link>

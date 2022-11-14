@@ -14,7 +14,7 @@ const VideoAula1 = () => {
       <Header />
       <main>
         <Aprender
-          texto={"hora de aprender"} />
+          texto={"Leitura e Formação de palavras"} />
 
 
         <section>
@@ -48,13 +48,14 @@ const VideoAula1 = () => {
         </section>
 
         <Container>
-          <Row>
-            <Col md={{ span: 4, offset: 4 }}>
-              <Row>
-                <Button>exercicios</Button>
-              </Row>
-            </Col>
-          </Row>
+
+          <Link className="" to={"/ex1"} >
+            <Button>
+
+              Exercicio
+            </Button>
+          </Link>
+
 
 
           <div className="next">
@@ -71,9 +72,11 @@ const VideoAula1 = () => {
               </Col>
               <div>
 
-                <Button><Link className="next-link" to={"/"} >
-                  Video Aula
-                </Link></Button>
+                <Link className="next-link" to={"/aula2"} >
+                  < Button >
+                    Video Aula
+                  </Button>
+                </Link>
               </div>
 
             </Row>
@@ -83,7 +86,7 @@ const VideoAula1 = () => {
 
 
         </Container>
-      </main>
+      </main >
     </>
   )
 
