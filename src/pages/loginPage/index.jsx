@@ -32,6 +32,8 @@ const Login = () => {
         <form className="form" onSubmit={handleSubmit}>
 
           <div className="field">
+            <audio src="assets/audio/objetivo.mpeg" controls></audio>
+
             <label>CPF</label>
 
             <input type={"email"}

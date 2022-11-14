@@ -55,6 +55,8 @@ const Register = () => {
 
 
           <div className="field">
+            <audio src="assets/audio/objetivo.mpeg" controls></audio>
+
             <label>Nome</label>
             <input type={"text"}
               name="name"
