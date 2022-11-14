@@ -1,11 +1,9 @@
+import "./login.css"
 import React, { useState, useContext } from "react"
 import { AuthContext } from "../../context/auth"
 import { Link } from "react-router-dom"
 import { Button, Alert, Container } from "react-bootstrap"
-
-import "./login.css"
-// import Footer from "../../components/Footer"
-
+import Footer from "../../components/footer"
 
 const Login = () => {
 
@@ -14,13 +12,10 @@ const Login = () => {
   const [cpf, setCpf] = useState("")
   const [senha, setSenha] = useState("")
 
-
-
-
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log("DADOS DO FORM", { cpf, senha })
-    // login(email, senha)
+    login(cpf, senha)
   }
   return (
 
@@ -71,7 +66,7 @@ const Login = () => {
 
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
 
 
