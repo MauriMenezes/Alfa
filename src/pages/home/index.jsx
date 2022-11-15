@@ -5,6 +5,7 @@ import { AiFillPlayCircle } from 'react-icons/ai';
 import { BsFillPencilFill, BsBook } from 'react-icons/bs';
 import './home.css'
 import Header from '../../components/Header';
+import Footer from '../../components/footer';
 
 
 const Home = () => {
@@ -74,7 +75,7 @@ const Home = () => {
           </Row>
           <Row>
             <div className='audio'>
-              <h3> OBJETIVO</h3>
+              <h3> Objetivo</h3>
               <audio src="/audio/objetivo.mpeg" controls></audio>
 
             </div>
@@ -82,11 +83,11 @@ const Home = () => {
               Promover a superação do analfabetismo entre jovens com 15 anos ou mais, adultos e idosos e contribuir para a universalização do ensino fundamental no Brasil focado principalmente nas Áreas rurais. Sua concepção reconhece a educação como direito humano e a oferta pública da alfabetização como porta de entrada para a educação e a escolarização das pessoas ao longo de toda a vida.
             </div>
           </Row>
-
+          <hr></hr>
           <Row>
             <div className='audio mb-3'>
               <h3> Percurso</h3>
-              <audio src="assets/audio/objetivo.mpeg" controls></audio>
+
             </div>
 
 
@@ -117,6 +118,7 @@ const Home = () => {
           </Row>
 
         </Container>
+        <Footer />
       </main>
     </>
   )
