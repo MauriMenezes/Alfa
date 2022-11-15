@@ -25,11 +25,11 @@ export const AuthProvider = ({ children }) => {
     setLoading(false)
   }, [])
 
-  const login = async (email, password) => {
+  const login = async (cpf, password) => {
 
-    console.log('login', { email, password })
+    console.log('login', { cpf, password })
 
-    const response = await createAuth(email, password)
+    const response = await createAuth(cpf, password)
     const token = response.data.token
     console.log(response.data)
 
@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
     api.defaults.headers.Authorization = `Bearer ${token}`
     setUser({ loggedUser })
 
-    navigate("/")
+    navigate("/biblioteca")
 
 
   }
@@ -56,7 +56,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('user')
     api.defaults.headers.Authorization = null
     setUser(null)
-    navigate("/login")
+    navigate("/")
   }
 
 
