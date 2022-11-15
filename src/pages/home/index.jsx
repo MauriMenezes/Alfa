@@ -42,16 +42,16 @@ const Home = () => {
         <Container>
 
           <Row>
-            <div class="my-2 video text-center embed-responsive embed-responsive-16by9 video-p">
-              <iframe width="100%" height="415" class="video-p" src="https://www.youtube.com/embed/hYfgGsbcbho"
-                title="YouTube video player" frameborder="0"
+            <div className="my-2 video text-center embed-responsive embed-responsive-16by9 video-p">
+              <iframe width="100%" height="415" className="video-p" src="https://www.youtube.com/embed/hYfgGsbcbho"
+                title="YouTube video player" frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowFullScreen></iframe>
             </div>
           </Row>
           <div className='audio'>
             <h3> RESUMO INFORMATIVO SOBRE O PROJETO</h3>
-            <audio src="assets/audio/objetivo.mpeg" controls></audio>
+            <audio src="/audio/Resumo-informativo.mpeg" controls></audio>
           </div>
           <Row>
             <hr></hr>
@@ -75,7 +75,8 @@ const Home = () => {
           <Row>
             <div className='audio'>
               <h3> OBJETIVO</h3>
-              <audio src="assets/audio/objetivo.mpeg" controls></audio>
+              <audio src="/audio/objetivo.mpeg" controls></audio>
+
             </div>
             <div>
               Promover a superação do analfabetismo entre jovens com 15 anos ou mais, adultos e idosos e contribuir para a universalização do ensino fundamental no Brasil focado principalmente nas Áreas rurais. Sua concepção reconhece a educação como direito humano e a oferta pública da alfabetização como porta de entrada para a educação e a escolarização das pessoas ao longo de toda a vida.
