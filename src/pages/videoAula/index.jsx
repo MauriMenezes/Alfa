@@ -24,7 +24,7 @@ const VideoAula1 = () => {
 
           <Container>
             <Row>
-              <Col>
+              <Col md={6}>
                 <Cards
                   video={<iframe width="100%" height="225" className="video-p" src="https://www.youtube.com/embed/hRtd_2LtM14"
                     title="YouTube video player" frameBorder="0"
@@ -34,7 +34,7 @@ const VideoAula1 = () => {
                   texto={"O vovô Manu está na área e vai ensinar para vocês um jeito divertido de aprender português e matemática!"}
                 />
               </Col>
-              <Col>
+              <Col md={6}>
                 <Cards
                   video={<iframe width="100%" height="225" className="video-p" src="https://www.youtube.com/embed/_N3Ny10OHQQ"
                     title="YouTube video player" frameBorder="0"
@@ -69,15 +69,15 @@ const VideoAula1 = () => {
               </p>
             </div>
             <Row >
-              <Col >
+              <div>
                 <h1 >Próxima Aula</h1>
                 <p>Mudanças de sons</p>
-              </Col>
+              </div>
               <div>
 
                 <Link className="next-link" to={"/aula2"} >
                   < Button >
-                    Video Aula
+                    Avançar
                   </Button>
                 </Link>
               </div>

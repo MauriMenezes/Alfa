@@ -111,16 +111,34 @@ const VideoAula3 = () => {
               </p>
             </div>
             <Row >
-              <Col >
-                <h1 >Próxima Aula</h1>
-                <p>Mudanças de sons</p>
-              </Col>
-              <div>
+              <Col>
+                <div>
+                  <h1 >Aula anterior</h1>
+                  <p>Mudanças de sons</p>
+                </div>
+                <div>
 
-                <Button><Link className="next-link" to={"/aula4"} >
-                  Video Aula
-                </Link></Button>
-              </div>
+                  <Link className="next-link" to={"/aula2"} >
+                    < Button >
+                      Voltar
+                    </Button>
+                  </Link>
+                </div>
+              </Col>
+              <Col>
+                <div>
+                  <h1 >Próxima Aula</h1>
+                  <p>Mudanças de sons</p>
+                </div>
+                <div>
+
+                  {/* <Link className="next-link" to={"/aula4"} > */}
+                  <Button href="#" variant="secondary" size="lg" disabled>
+                    Avançar
+                  </Button>
+                  {/* </Link> */}
+                </div>
+              </Col>
 
             </Row>
           </div>
