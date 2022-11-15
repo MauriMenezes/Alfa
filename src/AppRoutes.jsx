@@ -10,6 +10,7 @@ import VideoAula2 from './pages/videoAula/videoaula2';
 import VideoAula3 from './pages/videoAula/videoaula3';
 import Ex1 from './pages/exercicios/ex1';
 import Ex2 from './pages/exercicios/ex2';
+import Perfil from './pages/perfil';
 
 
 
@@ -80,6 +81,10 @@ const AppRoutes = () => {
             <Route
               exact path='/ex1'
               element={<Ex1 />}>
+            </Route>
+            <Route
+              exact path='/perfil'
+              element={<Perfil />}>
             </Route>
           </Routes>
 
