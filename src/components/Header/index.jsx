@@ -29,55 +29,51 @@ const Header = () => {
             <Col>
               <Nav className="justify-content-end">
                 <Nav.Item>
-                  <Button className="btn-logOut" onClick={handleLogout}>Sair  </Button>
+                  <Button variant="danger" className="btn-logOut" onClick={handleLogout}>Sair  </Button>
 
                 </Nav.Item>
               </Nav>
             </Col>
 
             <Container>
-              <Nav className="" activeKey="/home">
-                <Nav.Item>
-                  <Nav.Link href="/aula1">
-                    <div className='text-center'>
-                      <BsPlayCircle />
-                    </div>
-                    <div>
-                      Video Aula
-                    </div>
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href="/ex1">
-                    <div className='text-center'>
-                      <BsFillPencilFill />
-                    </div>
-                    <div>
-                      Exercicios
-                    </div>
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href="/biblioteca">
-                    <div className='text-center'>
-                      <BsBookHalf />
-                    </div>
-                    <div>
-                      Biblioteca
-                    </div>
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href="/ex1">
-                    <div className='text-center'>
-                      <BsFilePerson />
-                    </div>
-                    <span>
-                      Perfil
-                    </span>
-                  </Nav.Link>
-                </Nav.Item>
-              </Nav>
+              <Navbar >
+                <Container>
+                  <Nav className="me-auto">
+                    <Nav.Link href="aula1">
+                      <div className='text-center'>
+                        <BsPlayCircle />
+                      </div>
+                      <div>
+                        Video Aula
+                      </div>
+                    </Nav.Link>
+                    <Nav.Link href="ex1">
+                      <div className='text-center'>
+                        <BsFillPencilFill />
+                      </div>
+                      <div>
+                        Exercicios
+                      </div>
+                    </Nav.Link>
+                    <Nav.Link href="biblioteca">
+                      <div className='text-center'>
+                        <BsBookHalf />
+                      </div>
+                      <div>
+                        Biblioteca
+                      </div>
+                    </Nav.Link>
+                    <Nav.Link href="perfil">
+                      <div className='text-center'>
+                        <BsFilePerson />
+                      </div>
+                      <span>
+                        Perfil
+                      </span>
+                    </Nav.Link>
+                  </Nav>
+                </Container>
+              </Navbar>
             </Container>
 
           </Row>
