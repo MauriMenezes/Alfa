@@ -1,5 +1,7 @@
 import { Button, Col, Container, Nav, Row } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
+import { AuthContext } from "../../context/auth"
+import React, { useState, useContext } from "react"
 import { BsFillPencilFill, BsBookHalf, BsFilePerson, BsPlayCircle } from 'react-icons/bs';
 import { AiFillPlayCircle } from 'react-icons/ai';
 
@@ -8,6 +10,12 @@ import { AiFillPlayCircle } from 'react-icons/ai';
 
 import { Link } from "react-router-dom"
 const Header = () => {
+
+  const { logout } = useContext(AuthContext)
+  const handleLogout = () => {
+
+    logout()
+  }
 
   return (
 
@@ -21,50 +29,57 @@ const Header = () => {
             <Col>
               <Nav className="justify-content-end">
                 <Nav.Item>
-                  <Link className="link" to={"/"} >
-
-                    Sair
-                  </Link>
+                  <Button className="btn-logOut" onClick={handleLogout}>Sair  </Button>
 
                 </Nav.Item>
               </Nav>
             </Col>
-            <Navbar >
-              <Container>
-                <Nav className="me-auto">
-                  <Nav.Link href="#home">
+
+            <Container>
+              <Nav className="" activeKey="/home">
+                <Nav.Item>
+                  <Nav.Link href="/aula1">
                     <div className='text-center'>
                       <BsPlayCircle />
                     </div>
-                    <Link className="link" to={"/aula1"} >
+                    <div>
                       Video Aula
-                    </Link>
+                    </div>
                   </Nav.Link>
-                  <Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/ex1">
                     <div className='text-center'>
                       <BsFillPencilFill />
                     </div>
-                    <Link className="link" to={"/ex1"} >
-                      Exercícios
-                    </Link>
+                    <div>
+                      Exercicios
+                    </div>
                   </Nav.Link>
-                  <Nav.Link href="#features">
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/biblioteca">
                     <div className='text-center'>
                       <BsBookHalf />
                     </div>
-                    <Link className="link" to={"/biblioteca"} >
-                      Biblioteca Fácil
-                    </Link>
+                    <div>
+                      Biblioteca
+                    </div>
                   </Nav.Link>
-                  <Nav.Link href="#pricing">
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/ex1">
                     <div className='text-center'>
                       <BsFilePerson />
                     </div>
-                    Perfil
+                    <span>
+                      Perfil
+                    </span>
                   </Nav.Link>
-                </Nav>
-              </Container>
-            </Navbar>
+                </Nav.Item>
+              </Nav>
+            </Container>
+
           </Row>
         </Container>
       </header>
