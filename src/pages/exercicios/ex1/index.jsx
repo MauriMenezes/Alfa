@@ -7,6 +7,8 @@ import { Link } from "react-router-dom"
 
 import { Button, Col, Container, Row } from "react-bootstrap"
 import Header from "../../../components/Header"
+import PagExe from "../../../components/LinksExercicios";
+import LinkPages from "../../../components/LinksExercicios";
 
 const Ex1 = () => {
 
@@ -33,7 +35,9 @@ const Ex1 = () => {
       <main>
 
         <Container>
+          <LinkPages />
           <div className="next">
+
             <div >
               <p>
                 <strong>A – B – C – D – E – F – G – H – I –
@@ -125,7 +129,7 @@ const Ex1 = () => {
 
             <Row >
               <Col >
-                <h1 >Próximo exercico</h1>
+                <h1 >Próximo exercicio</h1>
                 <p>Mudanças de sons e silabas</p>
               </Col>
               <div>

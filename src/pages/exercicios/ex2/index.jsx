@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 
 import { Button, Col, Container, Row } from "react-bootstrap"
 import Header from "../../../components/Header"
+import LinkPages from "../../../components/LinksExercicios";
 
 const Ex2 = () => {
 
@@ -33,6 +34,7 @@ const Ex2 = () => {
       <main>
 
         <Container>
+          <LinkPages />
           <div className="next">
             <div >
               <p>
@@ -145,7 +147,7 @@ const Ex2 = () => {
 
             <Row >
               <Col >
-                <h1 >Próximo exercico</h1>
+                <h1 >Próximo exercicio</h1>
                 <p>Mudanças de sons e silabas</p>
               </Col>
               <div>
