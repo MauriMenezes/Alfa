@@ -21,29 +21,28 @@ const Register = () => {
   const submit = async (e) => {
     e.preventDefault()
 
-    console.log(user.nome)
-    // try {
-    //   const config = {
-    //     method: 'POST',
-    //     headers: {
-    //       'Accept': 'application/json',
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(user)
-    //   }
-    //   const response = await fetch("https://agencia-viagem-recode.herokuapp.com/cadastrar", config)
-    //   //const json = await response.json()
-    //   if (response.ok) {
-    //     console.log("deu certo")
-    //     navigate("/login")
-    //     return response
-    //   } else {
-    //     alert("email já cadastrado !")
-    //   }
-    // } catch (error) {
+    try {
+      const config = {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(user)
+      }
+      const response = await fetch("http://localhost:8080/cadastrar", config)
+      //const json = await response.json()
+      if (response.ok) {
+        console.log("deu certo")
+        navigate("/login")
+        return response
+      } else {
+        alert("cpf já cadastrado !")
+      }
+    } catch (error) {
 
-    //   console.log(error)
-    // }
+      console.log(error)
+    }
   }
 
   return (
