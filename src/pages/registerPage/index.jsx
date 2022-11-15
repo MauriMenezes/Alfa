@@ -30,10 +30,11 @@ const Register = () => {
         },
         body: JSON.stringify(user)
       }
-      const response = await fetch("http://localhost:8080/cadastrar", config)
+      const response = await fetch("https://alfarecodepro.herokuapp.com/cadastrar", config)
       //const json = await response.json()
       if (response.ok) {
         console.log("deu certo")
+        alert("Cadastro efetuado com sucesso! ")
         navigate("/login")
         return response
       } else {
