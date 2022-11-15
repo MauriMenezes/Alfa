@@ -31,9 +31,8 @@ const Login = () => {
 
             <label>CPF</label>
 
-            <input type={"email"}
-              name="password"
-              id="password"
+            <input type={"Text"}
+              name="cpf"
               value={cpf}
               placeholder="xxx-xxx-xxx.xx"
               onChange={(e) => setCpf(e.target.value)} required></input>
