@@ -2,10 +2,10 @@ import axios from "axios"
 
 export const api = axios.create({
 
-  baseURL: "https://agencia-viagem-recode.herokuapp.com",
+  baseURL: "http://localhost:8080",
 })
-export const createAuth = async (email, senha) => {
+export const createAuth = async (cpf, senha) => {
 
-  return api.post("/auth", { email, senha })
+  return api.post("/auth", { cpf, senha })
 }
 

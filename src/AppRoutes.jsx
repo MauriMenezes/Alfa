@@ -16,10 +16,10 @@ import Ex2 from './pages/exercicios/ex2';
 const AppRoutes = () => {
 
   const Private = ({ children }) => {
-    // const { authenticated, loading } = useContext(AuthContext)
-    // if (loading) {
-    //   return <div>Carregando...</div>
-    // }
+    const { authenticated, loading } = useContext(AuthContext)
+    if (loading) {
+      return <div>Carregando...</div>
+    }
     // if (!authenticated) {
     //   return <Navigate to="/login" />
     // }
