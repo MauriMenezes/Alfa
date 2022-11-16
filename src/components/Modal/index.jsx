@@ -33,11 +33,9 @@ const Modals = (props) => {
         <Modal.Body>{props.texto}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Fechar
           </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
+
         </Modal.Footer>
       </Modal>
     </>
